@@ -11,7 +11,7 @@
 
   <button onclick="imageChange()" class="rotate90" >
 <!--change the src of picture below-->
-    <img id="gong_img" src="https://github.com/yijingshi/Gong/blob/master/hitgong.jpg?raw=true" height="360" width="640" /></img>
+    <img id="gong_img" src="https://github.com/yijingshi/gong/blob/gh-pages/images/hitgong.jpg" height="360" width="640" /></img>
 
   </button>
 
@@ -20,13 +20,13 @@
     //change the image by onclick and sound play
     function imageChange(){
       //change the src of picture below!!!
-      var imgGong=document.getElementById('gong_img').src=('https://github.com/yijingshi/Gong/blob/master/gong.gif?raw=true');
+      var imgGong=document.getElementById('gong_img').src=('https://github.com/yijingshi/gong/blob/gh-pages/images/gong.gif');
       var soundfile = new Audio('gong2.wav');
       soundfile.play();
       soundfile.addEventListener("ended", function(){
       soundfile.currentTime=0;
       //change the src of picture below!!!
-      document.getElementById('gong_img').src=("/Users/gong/hitgong.jpg");
+      document.getElementById('gong_img').src=("https://github.com/yijingshi/gong/blob/gh-pages/images/hitgong.jpg");
         console.log("ended");
       }
     );
