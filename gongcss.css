@@ -13,7 +13,7 @@
   overflow: hidden;
   display: block;
   /*change the src of picture below*/
-  cursor:url("https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/mallet.png"), auto;
+  cursor:url("https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/mallet.png"), pointer;
 
 }
 
