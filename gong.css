@@ -1,0 +1,41 @@
+.center{
+  margin:auto;
+  width: 43%;
+
+}
+body{
+  cursor:url("/Users/yijingshi/Desktop/gong project/mallet.png"), pointer;
+}
+
+img, button{
+  width: 640px;
+  height: 360px;
+}
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: transparent;
+  border-style:hidden;
+  position: relative;
+  width: 500px;
+  height: 360px;
+  top:100px;
+  overflow: hidden;
+  display: block;
+  outline: none;
+  cursor:url("https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/mallet.png"), pointer;
+}
+
+p{
+  bottom: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin: auto;
+  padding: 30px 0;
+  width: 50%;
+  color: #ff8c00;
+}

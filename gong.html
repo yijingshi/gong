@@ -4,16 +4,18 @@
     <title>Gong</title>
   </head>
   <body>
-    <p>Hit the Gong!</p>
+    <div class="center">
+      <link href="gongcss.css" type="text/css" rel="stylesheet">
+
+      <p>Hit the Gong!</p>
+      <button onclick="imageChange()" class="rotate90" >
+  <!--change the src of picture below-->
+      <img id="gong_img" src="https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/hitgong.jpg"/></img>
+
+      </button>
+    </div>
+
   </body>
-  <link href="gongcss.css" type="text/css" rel="stylesheet">
-
-
-  <button onclick="imageChange()" class="rotate90" >
-<!--change the src of picture below-->
-    <img id="gong_img" src="https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/hitgong.jpg" height="360" width="640" /></img>
-
-  </button>
 
 
   <script>
@@ -23,10 +25,13 @@
       var imgGong=document.getElementById('gong_img').src=('https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/gong.gif');
       var soundfile = new Audio('gong2.wav');
       soundfile.play();
+      setTimeout(function(){
+        document.getElementById('gong_img').src=("https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/hitgong.jpg");
+      }, 4650);
       soundfile.addEventListener("ended", function(){
       soundfile.currentTime=0;
       //change the src of picture below!!!
-      document.getElementById('gong_img').src=("https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/hitgong.jpg");
+
         console.log("ended");
       }
     );
