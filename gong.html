@@ -10,7 +10,6 @@
 
       <p>Hit the Gong!</p>
       <button onclick="imageChange()" class="rotate90" >
-  <!--change the src of picture below-->
       <img id="gong_img" src="https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/hitgong.jpg"/></img>
 
       </button>
@@ -22,18 +21,16 @@
   <script>
     //change the image by onclick and sound play
     function imageChange(){
-      //change the src of picture below!!!
       var imgGong=document.getElementById('gong_img').src=('https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/gong.gif');
       var soundfile = new Audio('gong2.wav');
       soundfile.play();
       setTimeout(function(){
         document.getElementById('gong_img').src=("https://raw.githubusercontent.com/yijingshi/gong/gh-pages/images/hitgong.jpg");
-      }, 4650);
+      }, 6050);
       soundfile.addEventListener("ended", function(){
       soundfile.currentTime=0;
-      //change the src of picture below!!!
       console.log("ended");
-      },1000);
+      });
       console.log("hey");
     }
 
